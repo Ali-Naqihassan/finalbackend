@@ -23,7 +23,8 @@ router.post("/insert", (request, responce) => {
           rating:request.body.rating,
           review:request.body.review,
           detail:request.body.detail,
-          cordinate:request.body.cordinate
+          longnitude:request.body.longnitude,
+          lattitude:request.body.lattitude
         });
         usersModelObject
           .save()
